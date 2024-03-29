@@ -1,0 +1,12 @@
+BasedOnStyle: LLVM
+BreakBeforeBraces: Attach
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Inline
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+BreakBeforeBinaryOperators: NonAssignment
+BreakBeforeTernaryOperators: true
+BreakBeforeLogicalOperators: true
+SpaceBeforeParens: ControlStatements
