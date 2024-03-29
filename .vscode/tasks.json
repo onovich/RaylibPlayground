@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "${file}",  // 使用 ${file} 变量来动态指定要编译的源文件
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-I/opt/homebrew/include",  // raylib的include路径
+                "-L/opt/homebrew/lib",      // raylib的lib路径
+                "-lraylib",                 // 链接raylib
+                "-framework", "OpenGL",     // 链接OpenGL
+                "-framework", "Cocoa",      // 链接Cocoa
+                "-framework", "IOKit",      // 链接IOKit
+                "-framework", "CoreVideo",  // 链接CoreVideo
+                "-std=c99"                  // 使用C99标准
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            }
+        }
+    ]
+}

@@ -1,5 +1,13 @@
 {
     "files.associations": {
-        "*.clang-format": "c"
-    }
+        "*.clang-format": "yaml",
+        "stdio.h": "c"
+    },
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/**",
+        "/opt/homebrew/include"  // 添加 raylib 的 include 路径
+    ],
+    "C_Cpp.default.cStandard": "c11",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.intelliSenseMode": "macos-clang-arm64"
 }
